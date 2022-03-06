@@ -1,0 +1,115 @@
+@import '../../../styles/components/_vars.scss';
+
+.about {
+  background: $white;
+  padding: 120px 0;
+  // border-bottom: 1px solid #C8C8CD99;
+
+  @include lg {
+    padding: 60px 0;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+
+    @include xxl {}
+
+    @include xl {
+      // background: #000;
+      gap: 0;
+      flex-direction: column-reverse;
+    }
+
+    @include md {}
+
+
+    .texts {
+      width: 100%;
+      text-align: left;
+
+      @include xl {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .title {
+        font-weight: $f700;
+        font-size: 40px;
+        line-height: 50px;
+        color: $black;
+      }
+
+      .subtitle {
+        line-height: 26px;
+        max-width: 546px;
+        margin: 16px 0 20px;
+
+        @include xl {
+          margin: 25px auto 20px;
+        }
+      }
+
+      .btn {
+        width: 141px;
+        height: 50px;
+        max-width: 370px;
+        font-size: 16px;
+        color: $black;
+        line-height: 20px;
+        font-weight: $f700;
+        text-align: center;
+        border-radius: 6px;
+        background-color: $white;
+        border: 1px solid #333333;
+
+        @include lg {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // margin: 30px 0;
+      max-width: 396px;
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      .imgWrapper {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+
+      p {
+        position: absolute;
+        bottom: 25%;
+        font-size: 16px;
+        width: 100%;
+        max-width: 392px;
+        line-height: 26px;
+        padding: 15px 20px;
+        color: #000;
+        font-weight: $f500;
+
+        @include xl {
+          bottom: 10%;
+        }
+
+        background: $white;
+        border: 0.5px solid #ECEDED;
+        box-shadow: 0px 4px 35px rgba(51, 51, 51, 0.05);
+        border-radius: 6px;
+      }
+
+    }
+  }
+}

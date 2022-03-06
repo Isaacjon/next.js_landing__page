@@ -1,0 +1,88 @@
+@import '../../../styles/components/_vars.scss';
+
+
+.number__facts {
+  background: #F6F7F8;
+  padding: 110px 0;
+
+  @include lg {
+    padding: 60px 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .texts {
+      width: 100%;
+      max-width: 546px;
+      text-align: center;
+
+      .title {
+        font-weight: $f700;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      .sub {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 14px auto 30px;
+      }
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      @include lg {
+        flex-direction: column;
+        gap: 40px;
+      }
+      
+      @include md {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // flex-wrap: wrap;
+        text-align: center;
+
+        
+
+
+        .number {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 4px 25px rgba(51, 51, 51, 0.05);
+          margin-bottom: 20px;
+
+          span {
+            font-weight: $f700;
+            font-size: 40px;
+            line-height: 36px;
+          }
+        }
+
+        .cardSubtitle {
+          font-weight: $f500;
+          font-size: 20px;
+          line-height: 30px;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+@import '../../../styles/components/_vars.scss';
+
+.how {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  padding: 120px 0;
+
+  @include lg {
+    padding: 60px 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .how__title {
+      width: 100%;
+      max-width: 551px;
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card__real__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        @include xxl {
+        }
+
+        @include xl {
+          // background: #000;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          gap: 20px 0px;
+        }
+
+        @include lg {
+          flex-direction: column;
+          gap: 35px;
+        }
+
+        // @include xl {
+        //   // background: #000;
+        //   flex-wrap: wrap;
+        //   justify-content: space-evenly;
+        //   gap: 20px;
+        // }
+
+        // @include lg {
+        //   flex-direction: column;
+        // }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          // justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          max-height: 323px;
+          max-width: 270px;
+          text-align: center;
+          padding: 30px 0 25px;
+          cursor: pointer;
+          position: relative;
+
+
+          background: $white;
+          box-shadow: 0px 4px 25px rgba(51, 51, 51, 0.05);
+          border-radius: 6px;
+
+          .img__div {
+            width: 100%;
+            // position: absolute;
+            // top: 0;right: 0;
+          }
+
+          .text__div {
+            width: 100%;
+
+            .text__title {
+              width: 100%;
+              gap: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 30px 0 20px;
+              // font-weight: bold;
+              // font-size: 24px;
+
+              span {
+                color: $grey;
+              }
+            }
+
+            .text__sub {
+              width: 100%;
+              line-height: 26px;
+              text-align: center;
+              color: $black;
+            }
+          }
+
+
+          &:last-child {
+            padding: 95px 0;
+            background: #F6F7F8;
+
+            @include xl {
+              // margin-right: 55px;
+            }
+
+            @include lg {
+              margin-right: 0;
+              background: #F6F7F8;
+              padding: 16px;
+            }
+
+            .text__div {
+              .btn {
+                background: $black;
+                border-radius: 6px;
+                width: 230px;
+                height: 50px;
+
+                font-weight: $f700;
+                line-height: 20px;
+                text-align: center;
+                color: $white;
+              }
+            }
+          }
+
+          // &::before {
+          //   content: '';
+          //   position: absolute;
+          //   width: 50px;
+          //   height: 50px;
+          //   background: red;
+          //   top: 200px;
+          // }
+
+        }
+
+        .arrow__div {
+          width: 100%;
+          height: 100%;
+          max-width: 28px;
+          max-height: 1px;
+          min-width: 1px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          right: -11%;
+
+
+          @include xxl {
+            top: 50%;
+            right: -15%;
+          }
+
+          @include xl {
+            top: 50%;
+            right: -15%;
+          }
+
+          @include lg {
+            transform: rotate(90deg);
+            top: 105%;
+            right: 45%;
+          }
+
+        }
+      }
+    }
+
+  }
+}

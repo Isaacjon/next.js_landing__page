@@ -1,0 +1,53 @@
+
+@import '../styles/components/_vars.scss';
+// General
+// container breakpoints
+$xl: 1150px;
+$lg: 970px;
+$md: 730px;
+$sm: 550px;
+$xs: 320px;
+
+body{
+	color: $black;
+	font-size: $font_size;
+	font-family: $font_family;
+  font-weight: $f400;
+	line-height: 26px;
+	background: $black;
+}
+
+.container{
+	width: 100%;
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+@media (max-width: $xl) {
+	.container {
+		max-width: $lg;
+	}
+}
+@media (max-width: $lg) {
+	.container {
+		max-width: $md;
+	}
+}
+@media (max-width: $md) {
+	.container {
+		max-width: $sm;
+	}
+}
+@media (max-width: $sm) {
+	.container {
+		max-width: $xs;
+	}
+}
+@media (max-width: $sm) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+

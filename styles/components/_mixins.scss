@@ -1,0 +1,63 @@
+@import '../components/_vars.scss';
+
+// Media
+@mixin media($w) {
+	@media(max-width: $w) {
+		@content;
+	}
+}
+
+@mixin xl{
+	@media(max-width: $xl) {
+		@content;
+	}
+}
+
+@mixin lg{
+	@media(max-width: $lg) {
+		@content;
+	}
+}
+
+@mixin md{
+	@media(max-width: $md) {
+		@content;
+	}
+}
+
+@mixin sm{
+	@media(max-width: $sm) {
+		@content;
+	}
+}
+
+@mixin xs{
+	@media(max-width: 100%) {
+		@content;
+	}
+}
+
+
+
+// breakpoints
+@mixin cont-name($w) {
+	.container{
+		max-width: $w;
+	}
+}
+
+@include xl{
+	@include cont-name($lg)
+}
+
+@include lg{
+	@include cont-name($md)
+}
+
+@include md{
+	@include cont-name($sm)
+}
+
+@include sm{
+	@include cont-name(100%)
+}

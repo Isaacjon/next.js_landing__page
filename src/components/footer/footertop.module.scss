@@ -1,0 +1,79 @@
+@import '../../../styles/components/_vars.scss';
+
+.footerTop {
+
+  background: $white;
+  background: linear-gradient($white 50%, $black 50%);
+  border-bottom: 2px solid $black;
+
+  .content {
+    background: $white;
+    box-shadow: 0px 4px 40px rgba(51, 51, 51, 0.08);
+    border-radius: 6px;
+    width: 100%;
+    height: 269px;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include lg {
+      // background: #000;
+      flex-direction: column-reverse;
+      height: 100%;
+    }
+
+
+    .texts {
+      max-width: 638px;
+      width: 100%;
+
+      @include lg {
+        text-align: center;
+      }
+
+      .title {
+        font-weight: $f700;
+        font-size: 32px;
+        line-height: 50px;
+      }
+
+      .subtitle {
+        margin: 25px 0;
+        font-size: 16px;
+        font-weight: $f500;
+        line-height: 26px;
+      }
+
+      .btn {
+        width: 230px;
+        height: 50px;
+        // left: 174px;
+        // top: 8467px;
+
+        background: $black;
+        border-radius: 6px;
+        color: $white;
+
+        @include md {
+          width: 100%;
+        }
+      }
+    }
+    .imageBox {
+      width: 100%;
+      min-width: 245px;
+      max-width: 245px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img {
+        object-fit: cover;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../styles/components/_mixins.scss';
+@import '../../styles/components/_vars.scss';
+
+.header {
+  padding-top: 20px;
+  // min-height: 730px;
+  background: url('../../pages/images/header-section/header-img.svg') no-repeat center / cover;
+
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include lg {
+      flex-wrap: wrap;
+      // background: #000;
+      justify-content: center;
+    }
+  }
+ 
+}

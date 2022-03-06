@@ -1,0 +1,174 @@
+@import '../../../styles/components/_vars.scss';
+
+.section__ourCustomers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+  background: $white;
+
+  @include lg {
+    padding: 80px 0;
+  }
+
+  .section__title {
+    font-weight: $f700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: $black;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+
+    @include lg {
+      font-size: 34px;
+      line-height: 42px;
+    }
+  }
+
+  .section__statistics {
+    display: flex;
+    align-items: center;
+    padding: 25px 26px;
+    gap: 20px;
+    width: 100%;
+    max-width: 745px;
+    
+
+    background: $white;
+    box-shadow: 0px 4px 25px rgba(51, 51, 51, 0.05);
+    border-radius: 6px;
+    margin: 0 auto 30px;
+
+    justify-content: space-between;
+
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .subtitlesFirst {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: $black;
+      }
+
+      .stars {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .numbersCenter {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      p {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .number {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+          color: $black;
+        }
+
+        .text {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: $grey;
+        }
+      }
+    }
+
+    .iconLast {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+
+      @include lg {
+        margin-left: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  }
+
+  .card__wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include lg {
+      flex-wrap: wrap;
+      // background: #000;
+      justify-content: center;
+
+    }
+
+    .card {
+      padding: 12px 21px;
+      width: 100%;
+      height: 100%;
+      max-width: 370px;
+      max-height: 230px;
+      background: #F6F7F8;
+      border-radius: 6px;
+
+      display: flex;
+      flex-direction: column;
+
+      .top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .card__name {
+          font-weight: 500;
+          line-height: 26px;
+        }
+
+        .card__stars {
+          font-size: 20px;
+        }
+
+
+      }
+
+      .bottom {
+        line-height: 26px;
+
+        .subtitle {
+          padding: 14px 0 4px;
+          max-width: 320px;
+          line-height: 26px;
+          color: $black;
+        }
+
+        span {
+          font-size: 14px;
+          color: $grey;
+        }
+      }
+    }
+  }
+}

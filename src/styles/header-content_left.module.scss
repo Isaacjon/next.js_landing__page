@@ -1,0 +1,171 @@
+@import '../../styles/components/_vars.scss';
+@import '../../styles/components/_mixins.scss';
+
+.wrap {
+  width: 100%;
+  max-width: 550px;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  padding: 60px 0 80px;
+  // overflow: hidden;
+  position: relative;
+
+  @include lg {
+    padding-bottom: 10px;
+  }
+
+  @include md {
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+  .title {
+    font-weight: $f700;
+    font-size: 55px;
+    line-height: 75px;
+
+    @include xl {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    @include md {
+      font-size: 40px;
+      width: 100%;
+      max-width: 343px;
+    }
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 18px;
+
+    @include xl {
+      width: 250px;
+    }
+
+    @include md {
+      width: 100%;
+    }
+  }
+
+  .play {
+    width: 100%;
+    max-width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 45px 0;
+    // gap: 15px;
+
+
+
+    .image {
+      height: 100%;
+      width: 88px;
+      height: 88px;
+    }
+
+    span {
+      font-weight: $f700;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 20px;
+
+    @include xl {
+      flex-wrap: wrap;
+    }
+
+    @include lg {
+      max-width: 480px;
+
+    }
+
+    @include md {
+      // display: none;
+      position: absolute;
+      flex-direction: column;
+      width: 442px;
+      bottom: -174%;
+      // left: -20%;
+    }
+
+    @include media(520px) {
+      bottom: -163%;
+    }
+
+    @include media(470px) {
+      width: 400px;
+    }
+
+    @include media(400px) {
+      // width: 350px;
+      width: 300px;
+
+    }
+
+    @include media(376px) {
+      // width: 350px;
+      bottom: -144%;
+    }
+
+    @include media(300px) {
+      width: 270px;
+    }
+    @include media(286px) {
+      bottom: -138%;
+    }
+    @include media(282px) {
+      bottom: -123%;
+    }
+
+    .box {
+      // width: 100%;
+      width: 236px;
+      height: 85px;
+      padding: 15px 20px;
+      border-radius: 6px;
+      background-color: $white;
+      box-shadow: 0px 4px 35px rgba(51, 51, 51, 0.1);
+      text-align-last: left;
+
+      @include md {
+        width: 100%;
+        margin: auto;
+      }
+
+      @include media(470px) {}
+
+      .star {
+        font-size: 25px;
+      }
+
+      .info {
+        margin-top: 10px;
+        text-align: left;
+
+        span {
+          font-weight: 500;
+          font-size: 21px;
+          line-height: 26px;
+          margin-right: 5px;
+
+
+          &:last-child {
+            color: $grey;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

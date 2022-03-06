@@ -1,0 +1,166 @@
+@import '../../../styles/components/_vars.scss';
+
+.faqs {
+  padding: 120px 0;
+  border-bottom: 1px solid #C8C8CD99;
+  background: #F6F7F8;
+
+  @include lg {
+    padding: 60px 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .texts {
+      width: 100%;
+      text-align: center;
+
+      .title {
+        font-weight: $f700;
+        font-size: 40px;
+        line-height: 50px;
+        color: $black;
+      }
+
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 100%;
+      margin: 30px 0;
+      gap: 40px;
+
+      @include xxl {}
+
+      @include lg {}
+
+      @include md {}
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 728px;
+        width: 100%;
+
+        // -----------------------------------------
+        // removed because there are 
+        // no content in this box
+        &:last-child {
+          .qaBox {
+            .qa {
+
+              &:nth-child(2) {
+                // display: none;
+              }
+
+              &:nth-child(3) {
+                // display: none;
+              }
+            }
+          }
+        }
+        // -----------------------------------------
+
+        .cardTitle {
+          margin-right: auto;
+          font-weight: $f700;
+          font-size: 24px;
+          line-height: 26px;
+          color: $black;
+        }
+
+        .qaBox {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 20px;
+          max-width: 728px;
+          width: 100%;
+
+          .qa {
+            width: 100%;
+            padding: 25px 20px;
+            height: 100%;
+            min-height: 70px;
+            max-height: 140px;
+            position: relative;
+            background: $white;
+            box-shadow: 0px 4px 25px rgba(51, 51, 51, 0.05);
+            border-radius: 6px;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            // text-align: left;
+
+            @include md {
+              max-height: 100%;
+            }
+
+            .question {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 26px;
+              color: $black;
+
+              @include lg {
+                max-width: 403px;
+              }
+
+              @include md {
+                max-width: 288px;
+              }
+            }
+
+            .sign {
+              position: absolute;
+              top: 22px;
+              right: 2%;
+              font-size: 20px;
+              color: $black;
+              width: 30px;
+              height: 30px;
+              background: #F6F7F8;
+              display: flex;
+              justify-content: center;
+              border-radius: 50%;
+            }
+
+            .answer {
+              max-width: 603px;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 26px;
+              color: $black;
+              margin-top: 14px;
+
+              @include lg {
+                max-width: 403px;
+              }
+
+              @include md {
+                max-width: 288px;
+              }
+            }
+          }
+
+
+
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,68 @@
+@import '../../../styles/components/_vars.scss';
+
+.footerBottom {
+  background: $black;
+  border-top: 1px solid #FFFFFF40;
+  padding-top: 35px;
+  margin-top: 40px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include xl {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+
+  .div {
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    flex-direction: column;
+    gap: 15px;
+    height: 92px;
+
+    @include xl {
+      text-align: center;
+      height: 100%;
+    }
+
+
+
+
+    .Title {
+      width: 100%;
+      text-align: left;
+      color: $white;
+      font-weight: $f700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.005em;
+      text-transform: uppercase;
+
+      @include xl {
+        text-align: center;
+      }
+    }
+
+
+
+
+    .imgWrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px; 
+
+      @include xl {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+
+  }
+}

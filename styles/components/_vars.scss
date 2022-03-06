@@ -1,0 +1,95 @@
+// container breakpoints
+
+$xxl: 1400px;
+$xl: 1150px;
+$lg: 970px;
+$md: 740px;
+$sm: 550px;
+$xs: 320px;
+
+// styles
+$font_size: 16px;
+$f400 : 400; 
+$f500 : 500; 
+$f700 : 700; 
+$font_family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// colors
+$white: #ffffff;
+$black: #333333;
+$dark:  #333333;
+$grey: rgba(51, 51, 51, 0.6);
+$border_color: rgba(200, 200, 205, 0.6);
+$bg_color: #F6F7F8;
+
+
+
+// media 
+
+// Media
+@mixin media($w) {
+	@media(max-width: $w) {
+		@content;
+	}
+}
+
+@mixin xxl{
+	@media(max-width: $xl) {
+		@content;
+	}
+}
+
+@mixin xl{
+	@media(max-width: $lg) {
+		@content;
+	}
+}
+
+@mixin lg{
+	@media(max-width: $md) {
+		@content;
+	}
+}
+
+@mixin md{
+	@media(max-width: $sm) {
+		@content;
+	}
+}
+
+@mixin sm{
+	@media(max-width: 100%) {
+		@content;
+	}
+}
+
+@mixin xs{
+	@media(max-width: $xs) {
+		@content;
+	}
+}
+
+
+
+// breakpoints
+@mixin cont-name($w) {
+	.container{
+		max-width: $w;
+	}
+}
+
+@include xl{
+	@include cont-name($lg)
+}
+
+@include lg{
+	@include cont-name($md)
+}
+
+@include md{
+	@include cont-name($sm)
+}
+
+@include sm{
+	@include cont-name(100%)
+}

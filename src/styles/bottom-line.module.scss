@@ -1,0 +1,42 @@
+@import '../../styles/components/_mixins.scss';
+
+
+.background__color {
+  width: 100%;
+  background: #F6F7F8;
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include xl {
+      justify-content: space-evenly;
+    }
+
+    .box {
+      width: 235px;
+      display: flex;
+      align-items: center;
+      margin: 16px 0;
+      gap: 20px;
+
+      &:last-child {
+      }
+
+      image {}
+
+      .text {
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+        // width: 160px;
+
+
+        color: #333333;
+        color: #000;
+      }
+    }
+  }
+}

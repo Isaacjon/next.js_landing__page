@@ -1,0 +1,117 @@
+@import '../../../styles/components/_vars.scss';
+
+
+.mytello {
+  background: $white;
+  padding: 120px 0;
+
+  @include lg {
+    padding: 60px 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .texts {
+      width: 100%;
+      text-align: center;
+
+      .title {
+        font-weight: $f700;
+        font-size: 40px;
+        line-height: 50px;
+        color: $black;
+      }
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 30px 0;
+      gap: 20px;
+
+      @include xxl {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        // gap: 40px;
+      }
+
+      @include lg {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      @include md {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // flex-wrap: wrap;
+        text-align: center;
+        height: 362px;
+        min-height: 362px;
+        width: 100%;
+        max-width: 370px;
+        background: #F6F7F8;
+        border-radius: 6px;
+        padding: 30px;
+
+        @include md {
+          height: 100%;
+
+        }
+
+
+        .image__box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+
+        .cardTitle {
+          font-weight: $f500;
+          font-size: 20px;
+          line-height: 28px;
+          width: 100%;
+          max-width: 270px;
+          margin: 20px 0 10px;
+
+        }
+
+        .cardSubtitle {
+          font-size: 16px;
+          line-height: 26px;
+          width: 100%;
+          max-width: 302px;
+        }
+      }
+    }
+
+    .btn {
+      border-radius: 6px;
+      width: 230px;
+      height: 50px;
+      max-width: 370px;
+      font-weight: $f700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      background-color: $black;
+      color: $white;
+
+      @include xl {
+        width: 100%;
+      }
+    }
+  }
+}
